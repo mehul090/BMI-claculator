@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BMI_claculator
 {
-    public partial class Form1 : Form
+    public partial class BmiCalculator : Form
     {
-        public Form1()
+        public BmiCalculator()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
