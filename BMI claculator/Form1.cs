@@ -7,7 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Name:mehul khosla-300932741
+ * Date: August 04, 2017
+ * Description: BMI-calculator
+ * Version: 0.1 - created user inteface for calculator
+ */
 namespace BMI_claculator
 {
     public partial class BmiCalculator : Form

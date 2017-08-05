@@ -70,15 +70,15 @@
             // HeightLable
             // 
             this.HeightLable.AutoSize = true;
-            this.HeightLable.Location = new System.Drawing.Point(6, 145);
+            this.HeightLable.Location = new System.Drawing.Point(8, 147);
             this.HeightLable.Name = "HeightLable";
-            this.HeightLable.Size = new System.Drawing.Size(165, 31);
+            this.HeightLable.Size = new System.Drawing.Size(140, 31);
             this.HeightLable.TabIndex = 4;
-            this.HeightLable.Text = "Enter Height";
+            this.HeightLable.Text = "MY Height";
             // 
             // HeightTextBox
             // 
-            this.HeightTextBox.Location = new System.Drawing.Point(175, 145);
+            this.HeightTextBox.Location = new System.Drawing.Point(175, 144);
             this.HeightTextBox.Name = "HeightTextBox";
             this.HeightTextBox.Size = new System.Drawing.Size(60, 38);
             this.HeightTextBox.TabIndex = 5;
@@ -95,11 +95,11 @@
             // WightLable
             // 
             this.WightLable.AutoSize = true;
-            this.WightLable.Location = new System.Drawing.Point(6, 191);
+            this.WightLable.Location = new System.Drawing.Point(8, 189);
             this.WightLable.Name = "WightLable";
-            this.WightLable.Size = new System.Drawing.Size(170, 31);
+            this.WightLable.Size = new System.Drawing.Size(145, 31);
             this.WightLable.TabIndex = 7;
-            this.WightLable.Text = "Enter Weight";
+            this.WightLable.Text = "MY Weight";
             // 
             // WeightTextBox
             // 
