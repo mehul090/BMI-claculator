@@ -26,5 +26,15 @@ namespace BMI_claculator
         {
 
         }
+
+        private void AgeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MetricRadio_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
