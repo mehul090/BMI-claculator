@@ -47,6 +47,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.RemarkTextBox = new System.Windows.Forms.TextBox();
+            this.RemarkBar = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -129,11 +130,11 @@
             // 
             // CalculateButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(69, 261);
+            this.CalculateButton.Location = new System.Drawing.Point(69, 258);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(162, 70);
             this.CalculateButton.TabIndex = 10;
-            this.CalculateButton.Text = "Calculate\r\nBMI";
+            this.CalculateButton.Text = "Calculate\r\n BMI!";
             this.CalculateButton.UseVisualStyleBackColor = true;
             this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
@@ -141,10 +142,10 @@
             // 
             this.ResultextBox.BackColor = System.Drawing.Color.White;
             this.ResultextBox.Enabled = false;
-            this.ResultextBox.Location = new System.Drawing.Point(4, 350);
+            this.ResultextBox.Location = new System.Drawing.Point(4, 330);
             this.ResultextBox.Multiline = true;
             this.ResultextBox.Name = "ResultextBox";
-            this.ResultextBox.Size = new System.Drawing.Size(64, 37);
+            this.ResultextBox.Size = new System.Drawing.Size(64, 38);
             this.ResultextBox.TabIndex = 11;
             this.ResultextBox.TextChanged += new System.EventHandler(this.ResultextBox_TextChanged);
             // 
@@ -183,7 +184,7 @@
             // 
             // ClerAllButton
             // 
-            this.ClerAllButton.Location = new System.Drawing.Point(80, 394);
+            this.ClerAllButton.Location = new System.Drawing.Point(80, 398);
             this.ClerAllButton.Name = "ClerAllButton";
             this.ClerAllButton.Size = new System.Drawing.Size(144, 44);
             this.ClerAllButton.TabIndex = 16;
@@ -242,18 +243,27 @@
             // 
             // RemarkTextBox
             // 
-            this.RemarkTextBox.Location = new System.Drawing.Point(69, 350);
+            this.RemarkTextBox.Location = new System.Drawing.Point(69, 330);
             this.RemarkTextBox.Name = "RemarkTextBox";
             this.RemarkTextBox.Size = new System.Drawing.Size(227, 38);
             this.RemarkTextBox.TabIndex = 20;
             this.RemarkTextBox.TextChanged += new System.EventHandler(this.RemarkTextBox_TextChanged);
             // 
+            // RemarkBar
+            // 
+            this.RemarkBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.RemarkBar.Location = new System.Drawing.Point(4, 373);
+            this.RemarkBar.Name = "RemarkBar";
+            this.RemarkBar.Size = new System.Drawing.Size(292, 23);
+            this.RemarkBar.TabIndex = 21;
+            // 
             // BmiCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(304, 441);
+            this.Controls.Add(this.RemarkBar);
             this.Controls.Add(this.RemarkTextBox);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
@@ -304,6 +314,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TextBox RemarkTextBox;
+        private System.Windows.Forms.ProgressBar RemarkBar;
     }
 }
 
