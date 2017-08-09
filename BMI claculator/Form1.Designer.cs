@@ -187,8 +187,9 @@
             this.ClerAllButton.Name = "ClerAllButton";
             this.ClerAllButton.Size = new System.Drawing.Size(144, 44);
             this.ClerAllButton.TabIndex = 16;
-            this.ClerAllButton.Text = "clear all";
+            this.ClerAllButton.Text = "Reset";
             this.ClerAllButton.UseVisualStyleBackColor = true;
+            this.ClerAllButton.Click += new System.EventHandler(this.ClerAllButton_Click);
             // 
             // tableLayoutPanel1
             // 

@@ -108,6 +108,20 @@ namespace BMI_claculator
                         
             
         }
+
+        private void ClerAllButton_Click(object sender, EventArgs e)
+        {
+            //NameTextBox.Text = "";
+            //AgeTextBox.Text = "";
+            //HeightTextBox.Text = "";
+            //WeightTextBox.Text = "";
+            // ResultextBox.Text = "";
+            // RemarkTextBox.Text = "";
+            BmiCalculator NewForm = new BmiCalculator();
+            NewForm.Show();
+            this.Dispose(false);
+
+        }
     }
 }
 
