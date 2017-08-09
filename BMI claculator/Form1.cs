@@ -63,11 +63,27 @@ namespace BMI_claculator
 
                 result = (weight * 703) / (height * height);
                 ResultextBox.Text = Convert.ToString(result);
+                if(result<18.5)
+                { RemarkTextBox.Text = "UNDERWEIGHT"; }
+                else if(result>18.5&& result<24.9)
+                { RemarkTextBox.Text = "NORMAL"; }
+                else if (result > 25 && result <= 29.9)
+                { RemarkTextBox.Text = "OVERWEIGHT"; }
+                else if ( result >= 30)
+                { RemarkTextBox.Text = "OBESE"; }
             }
             else if (MetricRadio.Checked)
             {
                 result = weight / (height * height);
                 ResultextBox.Text = Convert.ToString(result);
+                if (result < 18.5)
+                { RemarkTextBox.Text = "UNDERWEIGHT"; }
+                else if (result > 18.5 && result < 24.9)
+                { RemarkTextBox.Text = "NORMAL"; }
+                else if (result >= 25 && result <= 29.9)
+                { RemarkTextBox.Text = "OVERWEIGHT"; }
+                else if (result >= 30)
+                { RemarkTextBox.Text = "OBESE"; }
             }
         }
 
@@ -89,10 +105,8 @@ namespace BMI_claculator
 
         private void RemarkTextBox_TextChanged(object sender, EventArgs e)
         {
-            if()
-            {
-
-            }
+                        
+            
         }
     }
 }

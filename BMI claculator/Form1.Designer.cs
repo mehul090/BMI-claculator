@@ -139,11 +139,12 @@
             // 
             // ResultextBox
             // 
+            this.ResultextBox.BackColor = System.Drawing.Color.White;
             this.ResultextBox.Enabled = false;
-            this.ResultextBox.Location = new System.Drawing.Point(12, 350);
+            this.ResultextBox.Location = new System.Drawing.Point(4, 350);
             this.ResultextBox.Multiline = true;
             this.ResultextBox.Name = "ResultextBox";
-            this.ResultextBox.Size = new System.Drawing.Size(70, 37);
+            this.ResultextBox.Size = new System.Drawing.Size(64, 37);
             this.ResultextBox.TabIndex = 11;
             this.ResultextBox.TextChanged += new System.EventHandler(this.ResultextBox_TextChanged);
             // 
@@ -240,9 +241,9 @@
             // 
             // RemarkTextBox
             // 
-            this.RemarkTextBox.Location = new System.Drawing.Point(88, 350);
+            this.RemarkTextBox.Location = new System.Drawing.Point(69, 350);
             this.RemarkTextBox.Name = "RemarkTextBox";
-            this.RemarkTextBox.Size = new System.Drawing.Size(208, 38);
+            this.RemarkTextBox.Size = new System.Drawing.Size(227, 38);
             this.RemarkTextBox.TabIndex = 20;
             this.RemarkTextBox.TextChanged += new System.EventHandler(this.RemarkTextBox_TextChanged);
             // 
