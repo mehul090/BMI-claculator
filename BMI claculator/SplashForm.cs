@@ -11,7 +11,7 @@ using System.Windows.Forms;
  student number-300932741
  date:august 10,2017
  description:this is the splash form class for BMI calculator
- version:0.1-created splash form*/
+ version:0.2-started splash form first*/
 namespace BMI_claculator
 {
     public partial class SplashForm : Form

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 /*name:mehul khosla
  student number-300932741
  description: created the project
- version:0.1-created project*/
+ version:0.2-started splash form first*/
 namespace BMI_claculator
 {
     static class Program
@@ -19,7 +19,7 @@ namespace BMI_claculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BmiCalculator());
+            Application.Run(new SplashForm());
         }
     }
 }
