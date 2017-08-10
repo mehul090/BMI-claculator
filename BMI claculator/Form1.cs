@@ -62,28 +62,28 @@ namespace BMI_claculator
             {
 
                 result = (weight * 703) / (height * height);
-                ResultextBox.Text = Convert.ToString(result)+" - ";
+               string Result = Convert.ToString(result)+" - ";
                 if(result<18.5)
-                { ResultextBox.Text = "UNDERWEIGHT"; }
+                { ResultextBox.Text = Result+ " - "+" UNDERWEIGHT" ; }
                 else if(result>18.5&& result<24.9)
-                { ResultextBox.Text = "NORMAL"; }
+                { ResultextBox.Text = Result +" - " + " NORMAL"; }
                 else if (result > 25 && result <= 29.9)
-                { ResultextBox.Text = "OVERWEIGHT"; }
+                { ResultextBox.Text = Result + " - " + " OVERWEIGHT"; }
                 else if ( result >= 30)
-                { ResultextBox.Text = "OBESE"; }
+                { ResultextBox.Text = Result + " - " + " OBESE"; }
             }
             else if (MetricRadio.Checked)
             {
                 result = weight / (height * height);
-                ResultextBox.Text = Convert.ToString(result)+" - ";
+                string Result = Convert.ToString(result)+" - ";
                 if (result < 18.5)
-                { ResultextBox.Text = "UNDERWEIGHT"; }
+                { ResultextBox.Text = Result + " - " + " UNDERWEIGHT"; }
                 else if (result > 18.5 && result < 24.9)
-                { ResultextBox.Text = "NORMAL"; }
+                { ResultextBox.Text = Result + " - " + " NORMAL"; }
                 else if (result >= 25 && result <= 29.9)
-                { ResultextBox.Text = "OVERWEIGHT"; }
+                { ResultextBox.Text = Result + " - " + " OVERWEIGHT"; }
                 else if (result >= 30)
-                { ResultextBox.Text = "OBESE"; }
+                { ResultextBox.Text = Result + " - " + " OBESE"; }
             }
         }
 
@@ -129,7 +129,7 @@ namespace BMI_claculator
         /// <param name="e"></param>
         private void BmiCalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
