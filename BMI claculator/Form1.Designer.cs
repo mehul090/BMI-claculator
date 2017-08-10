@@ -46,8 +46,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.RemarkTextBox = new System.Windows.Forms.TextBox();
-            this.RemarkBar = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -122,7 +120,7 @@
             // WunitLable
             // 
             this.WunitLable.AutoSize = true;
-            this.WunitLable.Location = new System.Drawing.Point(247, 213);
+            this.WunitLable.Location = new System.Drawing.Point(247, 216);
             this.WunitLable.Name = "WunitLable";
             this.WunitLable.Size = new System.Drawing.Size(49, 31);
             this.WunitLable.TabIndex = 9;
@@ -130,9 +128,9 @@
             // 
             // CalculateButton
             // 
-            this.CalculateButton.Location = new System.Drawing.Point(69, 258);
+            this.CalculateButton.Location = new System.Drawing.Point(69, 255);
             this.CalculateButton.Name = "CalculateButton";
-            this.CalculateButton.Size = new System.Drawing.Size(162, 70);
+            this.CalculateButton.Size = new System.Drawing.Size(162, 75);
             this.CalculateButton.TabIndex = 10;
             this.CalculateButton.Text = "Calculate\r\n BMI!";
             this.CalculateButton.UseVisualStyleBackColor = true;
@@ -142,10 +140,10 @@
             // 
             this.ResultextBox.BackColor = System.Drawing.Color.White;
             this.ResultextBox.Enabled = false;
-            this.ResultextBox.Location = new System.Drawing.Point(4, 330);
+            this.ResultextBox.Location = new System.Drawing.Point(6, 330);
             this.ResultextBox.Multiline = true;
             this.ResultextBox.Name = "ResultextBox";
-            this.ResultextBox.Size = new System.Drawing.Size(64, 38);
+            this.ResultextBox.Size = new System.Drawing.Size(292, 62);
             this.ResultextBox.TabIndex = 11;
             this.ResultextBox.TextChanged += new System.EventHandler(this.ResultextBox_TextChanged);
             // 
@@ -241,30 +239,12 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(236, 100);
             this.tableLayoutPanel3.TabIndex = 19;
             // 
-            // RemarkTextBox
-            // 
-            this.RemarkTextBox.Location = new System.Drawing.Point(69, 330);
-            this.RemarkTextBox.Name = "RemarkTextBox";
-            this.RemarkTextBox.Size = new System.Drawing.Size(227, 38);
-            this.RemarkTextBox.TabIndex = 20;
-            this.RemarkTextBox.TextChanged += new System.EventHandler(this.RemarkTextBox_TextChanged);
-            // 
-            // RemarkBar
-            // 
-            this.RemarkBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.RemarkBar.Location = new System.Drawing.Point(4, 373);
-            this.RemarkBar.Name = "RemarkBar";
-            this.RemarkBar.Size = new System.Drawing.Size(292, 23);
-            this.RemarkBar.TabIndex = 21;
-            // 
             // BmiCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(304, 441);
-            this.Controls.Add(this.RemarkBar);
-            this.Controls.Add(this.RemarkTextBox);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -313,8 +293,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TextBox RemarkTextBox;
-        private System.Windows.Forms.ProgressBar RemarkBar;
     }
 }
 
