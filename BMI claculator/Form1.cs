@@ -11,7 +11,7 @@ using System.Windows.Forms;
  * Name:mehul khosla-300932741
  * Date: August 04, 2017
  * Description: BMI-calculator
- * Version: 0.1 - created user inteface for calculator
+ * Version: 0.2 -added form closing event handler
  */
 namespace BMI_claculator
 {
@@ -120,6 +120,15 @@ namespace BMI_claculator
             BmiCalculator NewForm = new BmiCalculator();
             NewForm.Show();
             this.Dispose(false);
+
+        }
+        /// <summary>
+        /// this is an event for the form closing
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BmiCalculator_FormClosing(object sender, FormClosingEventArgs e)
+        {
 
         }
     }

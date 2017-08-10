@@ -11,7 +11,7 @@ using System.Windows.Forms;
  student number-300932741
  date:august 10,2017
  description:this is the splash form class for BMI calculator
- version:0.2-started splash form first*/
+ version:0.3-created splash form timer*/
 namespace BMI_claculator
 {
     public partial class SplashForm : Form
@@ -19,6 +19,18 @@ namespace BMI_claculator
         public SplashForm()
         {
             InitializeComponent();
+        }
+        /// <summary>
+        /// this is the event handler for the "tick"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        {
+            BmiCalculator bmiCalculator = new BmiCalculator();
+            bmiCalculator.Show();
+            this.Hide();
+            SplashFormTimer.Enabled = false;//turn timer off
         }
     }
 }
