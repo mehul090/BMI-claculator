@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
             this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // SplashFormTimer
@@ -50,14 +51,26 @@
             this.WelcomeLabel.Text = "Welcome to my \r\nBMI CALCULATOR";
             this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // progressBar1
+            // 
+            this.progressBar1.ForeColor = System.Drawing.Color.White;
+            this.progressBar1.Location = new System.Drawing.Point(12, 388);
+            this.progressBar1.MarqueeAnimationSpeed = 5000;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(280, 27);
+            this.progressBar1.TabIndex = 1;
+            this.progressBar1.Value = 100;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
             // SplashForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.OrangeRed;
+            this.BackColor = System.Drawing.Color.Gold;
             this.BackgroundImage = global::BMI_claculator.Properties.Resources.bmi;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(304, 441);
             this.ControlBox = false;
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.WelcomeLabel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -73,5 +86,6 @@
 
         private System.Windows.Forms.Timer SplashFormTimer;
         private System.Windows.Forms.Label WelcomeLabel;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

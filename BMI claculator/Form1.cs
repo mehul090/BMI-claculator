@@ -11,7 +11,7 @@ using System.Windows.Forms;
  * Name:mehul khosla-300932741
  * Date: August 04, 2017
  * Description: BMI-calculator
- * Version: 0.2 -added form closing event handler
+ * Version: 0.3 -added picture box to show BMI
  */
 namespace BMI_claculator
 {
@@ -23,10 +23,7 @@ namespace BMI_claculator
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void AgeTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -62,28 +59,30 @@ namespace BMI_claculator
             {
 
                 result = (weight * 703) / (height * height);
-               string Result = Convert.ToString(result)+" - ";
+               string Result = Convert.ToString(Math.Round(result,2))+" - ";
                 if(result<18.5)
-                { ResultextBox.Text = Result+ " - "+" UNDERWEIGHT" ; }
+                { ResultextBox.Text = Result +"UNDERWEIGHT" ; }
                 else if(result>18.5&& result<24.9)
-                { ResultextBox.Text = Result +" - " + " NORMAL"; }
+                { ResultextBox.Text = Result  + "NORMAL"; }
                 else if (result > 25 && result <= 29.9)
-                { ResultextBox.Text = Result + " - " + " OVERWEIGHT"; }
+                { ResultextBox.Text = Result  + "OVERWEIGHT"; }
                 else if ( result >= 30)
-                { ResultextBox.Text = Result + " - " + " OBESE"; }
+                { ResultextBox.Text = Result  + "OBESE"; }
             }
             else if (MetricRadio.Checked)
             {
                 result = weight / (height * height);
-                string Result = Convert.ToString(result)+" - ";
+                string Result = Convert.ToString((result)+" - ");
+                
                 if (result < 18.5)
-                { ResultextBox.Text = Result + " - " + " UNDERWEIGHT"; }
+                { ResultextBox.Text = Result  + "UNDERWEIGHT"; }
                 else if (result > 18.5 && result < 24.9)
-                { ResultextBox.Text = Result + " - " + " NORMAL"; }
+                { ResultextBox.Text = Result  + "NORMAL"; }
                 else if (result >= 25 && result <= 29.9)
-                { ResultextBox.Text = Result + " - " + " OVERWEIGHT"; }
+                { ResultextBox.Text = Result  + "OVERWEIGHT"; }
                 else if (result >= 30)
-                { ResultextBox.Text = Result + " - " + " OBESE"; }
+                { ResultextBox.Text = Result  + "OBESE"; }
+
             }
         }
 
@@ -131,6 +130,8 @@ namespace BMI_claculator
         {
             Application.Exit();
         }
+
+        
     }
 }
 
