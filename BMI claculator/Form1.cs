@@ -67,6 +67,8 @@ namespace BMI_claculator
                     NormalPictureBox.Visible = false;
                     OverWeightPictureBox.Visible = false;
                     ObesePictureBox.Visible = false;
+                    MessageBox.Show("WORK ON YOUR DIET", "BMI CALCULATOR",
+                       MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
                 }
 
 
@@ -77,6 +79,9 @@ namespace BMI_claculator
                     NormalPictureBox.Visible = true;
                     OverWeightPictureBox.Visible = false;
                     ObesePictureBox.Visible = false;
+                    MessageBox.Show("GOOD WORK..DO MAINTAIN IT", "BMI CALCULATOR",
+                       MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+
                 }
                 else if (result >= 25 && result <= 29.9)
                 {
@@ -85,6 +90,8 @@ namespace BMI_claculator
                     UnderWeightPictueBox.Visible = false;
                     NormalPictureBox.Visible = false;
                     ObesePictureBox.Visible = false;
+                    MessageBox.Show("WATCH YOUR DIET", "BMI CALCULATOR",
+                       MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
                 }
                 else if (result >= 30)
                 {
@@ -93,6 +100,8 @@ namespace BMI_claculator
                     UnderWeightPictueBox.Visible = false;
                     NormalPictureBox.Visible = false;
                     OverWeightPictureBox.Visible = false;
+                    MessageBox.Show("YOU GOT TO WORK HARD!!", "BMI CALCULATOR",
+                      MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
 
                 }
             }
@@ -108,6 +117,8 @@ namespace BMI_claculator
                     NormalPictureBox.Visible = false;
                     OverWeightPictureBox.Visible = false;
                     ObesePictureBox.Visible = false;
+                    MessageBox.Show("WORK ON YOUR DIET", "BMI CALCULATOR",
+                       MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
                 }
                 else if (result > 18.5 && result <= 24.9)
                 {
@@ -117,6 +128,8 @@ namespace BMI_claculator
 
                     OverWeightPictureBox.Visible = false;
                     ObesePictureBox.Visible = false;
+                    MessageBox.Show("GOOD WORK..DO MAINTAIN IT", "BMI CALCULATOR",
+                      MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
                 }
                 else if (result >= 25 && result <= 29.9)
                 {
@@ -126,6 +139,8 @@ namespace BMI_claculator
                     NormalPictureBox.Visible = false;
 
                     ObesePictureBox.Visible = false;
+                    MessageBox.Show("WATCH YOUR DIET", "BMI CALCULATOR",
+                      MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
                 }
                 else if (result >= 30)
                 {
@@ -134,6 +149,8 @@ namespace BMI_claculator
                     UnderWeightPictueBox.Visible = false;
                     NormalPictureBox.Visible = false;
                     OverWeightPictureBox.Visible = false;
+                    MessageBox.Show("YOU GOT TO WORK HARD!!", "BMI CALCULATOR",
+                     MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
 
                 }
             }
