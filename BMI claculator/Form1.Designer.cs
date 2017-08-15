@@ -46,17 +46,17 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.UnderWeightPictueBox = new System.Windows.Forms.PictureBox();
+            this.NormalPictureBox = new System.Windows.Forms.PictureBox();
+            this.OverWeightPictureBox = new System.Windows.Forms.PictureBox();
+            this.ObesePictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UnderWeightPictueBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NormalPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverWeightPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ObesePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ImperialRadio
@@ -190,7 +190,7 @@
             // 
             // ClerAllButton
             // 
-            this.ClerAllButton.Location = new System.Drawing.Point(80, 398);
+            this.ClerAllButton.Location = new System.Drawing.Point(80, 396);
             this.ClerAllButton.Name = "ClerAllButton";
             this.ClerAllButton.Size = new System.Drawing.Size(144, 44);
             this.ClerAllButton.TabIndex = 16;
@@ -214,7 +214,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(280, 100);
             this.tableLayoutPanel1.TabIndex = 17;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -248,39 +247,45 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(236, 100);
             this.tableLayoutPanel3.TabIndex = 19;
             // 
-            // pictureBox1
+            // UnderWeightPictueBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Yellow;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 388);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 10);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
+            this.UnderWeightPictueBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.UnderWeightPictueBox.Location = new System.Drawing.Point(6, 384);
+            this.UnderWeightPictueBox.Name = "UnderWeightPictueBox";
+            this.UnderWeightPictueBox.Size = new System.Drawing.Size(77, 10);
+            this.UnderWeightPictueBox.TabIndex = 20;
+            this.UnderWeightPictueBox.TabStop = false;
+            this.UnderWeightPictueBox.Visible = false;
             // 
-            // pictureBox2
+            // NormalPictureBox
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(6, 387);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(152, 10);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.NormalPictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.NormalPictureBox.Location = new System.Drawing.Point(6, 384);
+            this.NormalPictureBox.Name = "NormalPictureBox";
+            this.NormalPictureBox.Size = new System.Drawing.Size(152, 10);
+            this.NormalPictureBox.TabIndex = 21;
+            this.NormalPictureBox.TabStop = false;
+            this.NormalPictureBox.Visible = false;
             // 
-            // pictureBox3
+            // OverWeightPictureBox
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(6, 386);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(222, 10);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
+            this.OverWeightPictureBox.BackColor = System.Drawing.Color.OrangeRed;
+            this.OverWeightPictureBox.Location = new System.Drawing.Point(6, 384);
+            this.OverWeightPictureBox.Name = "OverWeightPictureBox";
+            this.OverWeightPictureBox.Size = new System.Drawing.Size(222, 10);
+            this.OverWeightPictureBox.TabIndex = 22;
+            this.OverWeightPictureBox.TabStop = false;
+            this.OverWeightPictureBox.Visible = false;
             // 
-            // pictureBox4
+            // ObesePictureBox
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Red;
-            this.pictureBox4.Location = new System.Drawing.Point(6, 387);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(292, 10);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
+            this.ObesePictureBox.BackColor = System.Drawing.Color.Red;
+            this.ObesePictureBox.Location = new System.Drawing.Point(6, 384);
+            this.ObesePictureBox.Name = "ObesePictureBox";
+            this.ObesePictureBox.Size = new System.Drawing.Size(292, 10);
+            this.ObesePictureBox.TabIndex = 23;
+            this.ObesePictureBox.TabStop = false;
+            this.ObesePictureBox.Visible = false;
             // 
             // BmiCalculator
             // 
@@ -288,10 +293,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(304, 441);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ObesePictureBox);
+            this.Controls.Add(this.OverWeightPictureBox);
+            this.Controls.Add(this.NormalPictureBox);
+            this.Controls.Add(this.UnderWeightPictueBox);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -309,16 +314,17 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BmiCalculator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BmiCalculator_FormClosing);
+            this.Load += new System.EventHandler(this.BmiCalculator_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UnderWeightPictueBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NormalPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverWeightPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ObesePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,10 +350,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox UnderWeightPictueBox;
+        private System.Windows.Forms.PictureBox NormalPictureBox;
+        private System.Windows.Forms.PictureBox OverWeightPictureBox;
+        private System.Windows.Forms.PictureBox ObesePictureBox;
     }
 }
 

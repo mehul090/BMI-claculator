@@ -59,30 +59,83 @@ namespace BMI_claculator
             {
 
                 result = (weight * 703) / (height * height);
-               string Result = Convert.ToString(Math.Round(result,2))+" - ";
-                if(result<18.5)
-                { ResultextBox.Text = Result +"UNDERWEIGHT" ; }
-                else if(result>18.5&& result<24.9)
-                { ResultextBox.Text = Result  + "NORMAL"; }
-                else if (result > 25 && result <= 29.9)
-                { ResultextBox.Text = Result  + "OVERWEIGHT"; }
-                else if ( result >= 30)
-                { ResultextBox.Text = Result  + "OBESE"; }
+                string Result = Convert.ToString(Math.Round(result, 1)) + " - ";
+                if (result <= 18.5)
+                {
+                    ResultextBox.Text = Result + "UNDERWEIGHT";
+                    UnderWeightPictueBox.Visible = true;
+                    NormalPictureBox.Visible = false;
+                    OverWeightPictureBox.Visible = false;
+                    ObesePictureBox.Visible = false;
+                }
+
+
+                else if (result >= 18.6 && result <= 24.9)
+                {
+                    ResultextBox.Text = Result + "NORMAL";
+                    UnderWeightPictueBox.Visible = false;
+                    NormalPictureBox.Visible = true;
+                    OverWeightPictureBox.Visible = false;
+                    ObesePictureBox.Visible = false;
+                }
+                else if (result >= 25 && result <= 29.9)
+                {
+                    ResultextBox.Text = Result + "OVERWEIGHT";
+                    OverWeightPictureBox.Visible = true;
+                    UnderWeightPictueBox.Visible = false;
+                    NormalPictureBox.Visible = false;
+                    ObesePictureBox.Visible = false;
+                }
+                else if (result >= 30)
+                {
+                    ResultextBox.Text = Result + "OBESE";
+                    ObesePictureBox.Visible = true;
+                    UnderWeightPictueBox.Visible = false;
+                    NormalPictureBox.Visible = false;
+                    OverWeightPictureBox.Visible = false;
+
+                }
             }
             else if (MetricRadio.Checked)
             {
                 result = weight / (height * height);
-                string Result = Convert.ToString((result)+" - ");
-                
-                if (result < 18.5)
-                { ResultextBox.Text = Result  + "UNDERWEIGHT"; }
-                else if (result > 18.5 && result < 24.9)
-                { ResultextBox.Text = Result  + "NORMAL"; }
-                else if (result >= 25 && result <= 29.9)
-                { ResultextBox.Text = Result  + "OVERWEIGHT"; }
-                else if (result >= 30)
-                { ResultextBox.Text = Result  + "OBESE"; }
+                string Result = Convert.ToString(Math.Round(result, 1) + " - ");
 
+                if (result <= 18.5)
+                {
+                    ResultextBox.Text = Result + "UNDERWEIGHT";
+                    UnderWeightPictueBox.Visible = true;
+                    NormalPictureBox.Visible = false;
+                    OverWeightPictureBox.Visible = false;
+                    ObesePictureBox.Visible = false;
+                }
+                else if (result > 18.5 && result <= 24.9)
+                {
+                    ResultextBox.Text = Result + "NORMAL";
+                    NormalPictureBox.Visible = true;
+                    UnderWeightPictueBox.Visible = false;
+
+                    OverWeightPictureBox.Visible = false;
+                    ObesePictureBox.Visible = false;
+                }
+                else if (result >= 25 && result <= 29.9)
+                {
+                    ResultextBox.Text = Result + "OVERWEIGHT";
+                    OverWeightPictureBox.Visible = true;
+                    UnderWeightPictueBox.Visible = false;
+                    NormalPictureBox.Visible = false;
+
+                    ObesePictureBox.Visible = false;
+                }
+                else if (result >= 30)
+                {
+                    ResultextBox.Text = Result + "OBESE";
+                    ObesePictureBox.Visible = true;
+                    UnderWeightPictueBox.Visible = false;
+                    NormalPictureBox.Visible = false;
+                    OverWeightPictureBox.Visible = false;
+
+                }
             }
         }
 
@@ -129,6 +182,14 @@ namespace BMI_claculator
         private void BmiCalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BmiCalculator_Load(object sender, EventArgs e)
+        {
+            ObesePictureBox.Visible = false;
+            UnderWeightPictueBox.Visible = false;
+            NormalPictureBox.Visible = false;
+            OverWeightPictureBox.Visible = false;
         }
 
         
